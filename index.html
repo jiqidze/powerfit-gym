@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PowerFit Gym</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h1>PowerFit</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#membership">Membership</a></li>
+      <li><a href="#trainers">Trainers</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="banner home-bg">
+    <div class="banner-text">
+      <h2>Train Hard. Stay Strong.</h2>
+      <p>Your fitness journey starts here</p>
+      <button onclick="joinGym()">Join Now</button>
+    </div>
+  </section>
+
+  <!-- CLASSES -->
+  <section id="classes" class="banner classes-bg">
+    <div class="banner-text">
+      <h2>Our Classes</h2>
+      <p>Weight Training • CrossFit • Yoga • Boxing</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card-container">
+      <button class="card module-btn" onclick="showModule('weight')">Weight Training</button>
+      <button class="card module-btn" onclick="showModule('crossfit')">CrossFit</button>
+      <button class="card module-btn" onclick="showModule('yoga')">Yoga</button>
+      <button class="card module-btn" onclick="showModule('boxing')">Boxing</button>
+    </div>
+    <div id="module-content" class="module-content" style="display:none; margin-top:30px;"></div>
+  </section>
+
+  <!-- MEMBERSHIP -->
+  <section id="membership" class="banner membership-bg">
+    <div class="banner-text">
+      <h2>Membership Plans</h2>
+      <p>Choose the best plan for you</p>
+    </div>
+  </section>
+
+  <section class="section gray">
+    <div class="card-container">
+      <div class="card"><h3>Basic</h3><p>$20/month</p></div>
+      <div class="card"><h3>Standard</h3><p>$35/month</p></div>
+      <div class="card"><h3>Premium</h3><p>$50/month</p></div>
+    </div>
+  </section>
+
+  <!-- TRAINERS -->
+  <section id="trainers" class="banner trainers-bg">
+    <div class="banner-text">
+      <h2>Our Trainers</h2>
+      <p>Professional & Certified Coaches</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card-container">
+      <button class="card module-btn" onclick="showModule('alex')">Alex – Strength Coach</button>
+      <button class="card module-btn" onclick="showModule('maya')">Maya – Yoga Trainer</button>
+      <button class="card module-btn" onclick="showModule('david')">David – Boxing Coach</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="banner contact-bg">
+    <div class="banner-text">
+      <h2>Contact Us</h2>
+      <p>We are here to help you</p>
+    </div>
+  </section>
+
+  <section class="section gray contact-content">
+    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f" class="contact-image">
+
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 PowerFit Gym | <a href="https://github.com/yourusername/your-repo-name" target="_blank" id="site-link">Visit our site</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

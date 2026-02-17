@@ -1,0 +1,195 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* NAV HOVER EFFECT */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: red;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: red;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* FULLSCREEN BANNERS */
+.banner {
+  min-height: 100vh;
+  padding-top: 80px; /* space for navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: start;
+}
+
+.banner-text {
+  background: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* BACKGROUND IMAGES */
+.home-bg {
+  background-image: url("https://images.unsplash.com/photo-1583454110551-21f2fa2afe61");
+}
+
+.classes-bg {
+  background-image: url("https://images.unsplash.com/photo-1599058917765-a780eda07a3e");
+}
+
+.membership-bg {
+  background-image: url("https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b");
+}
+
+.trainers-bg {
+  background-image: url("https://images.unsplash.com/photo-1605296867304-46d5465a13f1");
+}
+
+.contact-bg {
+  background-image: url("https://images.unsplash.com/photo-1526401485004-2fda9f3c53b0");
+}
+
+/* CONTENT SECTIONS */
+.section {
+  min-height: 100vh;
+  padding: 100px 20px 60px;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.gray {
+  background: #f4f4f4;
+}
+
+/* CARDS */
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  width: 220px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.module-content {
+  background: #fff;
+  color: #222;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+
+/* BUTTON */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: darkred;
+}
+
+/* CONTACT LAYOUT */
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-image {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
