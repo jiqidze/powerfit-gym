@@ -1,3 +1,27 @@
+.contact-section-img {
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.trainer-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px 0;
+}
+
+.trainer-content {
+  background: #fff;
+  color: #222;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
 html {
   scroll-behavior: smooth;
 }

@@ -9,7 +9,7 @@
 
   <!-- NAVBAR -->
   <nav>
-    <h1>PowerFit</h1>
+    <h1 style="cursor:pointer;" onclick="scrollToTop()">PowerFit</h1>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#classes">Classes</a></li>
@@ -56,10 +56,11 @@
 
   <section class="section gray">
     <div class="card-container">
-      <div class="card"><h3>Basic</h3><p>$20/month</p></div>
-      <div class="card"><h3>Standard</h3><p>$35/month</p></div>
-      <div class="card"><h3>Premium</h3><p>$50/month</p></div>
+      <button class="card membership-btn" onclick="showMembership('basic')"><h3>Basic</h3><p>$20/month</p></button>
+      <button class="card membership-btn" onclick="showMembership('standard')"><h3>Standard</h3><p>$35/month</p></button>
+      <button class="card membership-btn" onclick="showMembership('premium')"><h3>Premium</h3><p>$50/month</p></button>
     </div>
+    <div id="membership-content" class="module-content" style="display:none; margin-top:30px;"></div>
   </section>
 
   <!-- TRAINERS -->
@@ -72,10 +73,11 @@
 
   <section class="section">
     <div class="card-container">
-      <button class="card module-btn" onclick="showModule('alex')">Alex – Strength Coach</button>
-      <button class="card module-btn" onclick="showModule('maya')">Maya – Yoga Trainer</button>
-      <button class="card module-btn" onclick="showModule('david')">David – Boxing Coach</button>
+      <button class="card trainer-btn" onclick="showTrainer('alex')">Alex – Strength Coach</button>
+      <button class="card trainer-btn" onclick="showTrainer('maya')">Maya – Yoga Trainer</button>
+      <button class="card trainer-btn" onclick="showTrainer('david')">David – Boxing Coach</button>
     </div>
+    <div id="trainer-content" class="trainer-content" style="display:none; margin-top:30px;"></div>
   </section>
 
   <!-- CONTACT -->
@@ -83,6 +85,7 @@
     <div class="banner-text">
       <h2>Contact Us</h2>
       <p>We are here to help you</p>
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" alt="Contact Us" class="contact-section-img">
     </div>
   </section>
 
@@ -98,9 +101,14 @@
   </section>
 
   <footer>
-    <p>© 2026 PowerFit Gym | <a href="https://github.com/yourusername/your-repo-name" target="_blank" id="site-link">Visit our site</a></p>
+    <p>© 2026 PowerFit Gym</p>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
