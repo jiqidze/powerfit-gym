@@ -1,5 +1,11 @@
 // Show membership plan details
 function showMembership(plan) {
+  // Hide other content sections
+  const moduleDiv = document.getElementById('module-content');
+  if (moduleDiv) moduleDiv.style.display = 'none';
+  const trainerDiv = document.getElementById('trainer-content');
+  if (trainerDiv) trainerDiv.style.display = 'none';
+
   const details = {
     basic: '<h3>Basic Plan</h3><ul><li>Access to gym equipment</li><li>Locker room</li><li>1 group class/week</li></ul>',
     standard: '<h3>Standard Plan</h3><ul><li>All Basic features</li><li>Unlimited group classes</li><li>1 personal training session/month</li></ul>',
@@ -14,6 +20,12 @@ function showMembership(plan) {
 
 // Show trainer image and info
 function showTrainer(trainer) {
+  // Hide other content sections
+  const moduleDiv = document.getElementById('module-content');
+  if (moduleDiv) moduleDiv.style.display = 'none';
+  const membershipDiv = document.getElementById('membership-content');
+  if (membershipDiv) membershipDiv.style.display = 'none';
+
   const images = {
     alex: 'https://randomuser.me/api/portraits/men/32.jpg',
     maya: 'https://randomuser.me/api/portraits/women/44.jpg',
@@ -33,6 +45,12 @@ function showTrainer(trainer) {
 
 // Show module content dynamically
 function showModule(module) {
+  // Hide other content sections
+  const membershipDiv = document.getElementById('membership-content');
+  if (membershipDiv) membershipDiv.style.display = 'none';
+  const trainerDiv = document.getElementById('trainer-content');
+  if (trainerDiv) trainerDiv.style.display = 'none';
+
   const content = {
     weight: '<h3>Weight Training</h3><p>Build muscle and strength with our expert-led weight training sessions.</p>',
     crossfit: '<h3>CrossFit</h3><p>High-intensity CrossFit classes to boost your endurance and fitness.</p>',
