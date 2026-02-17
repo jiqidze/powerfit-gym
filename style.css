@@ -1,3 +1,20 @@
+.contact-banner {
+  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-banner-text {
+  background: rgba(0,0,0,0.6);
+  padding: 40px 60px;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+}
 .contact-section-img {
   width: 400px;
   max-width: 90vw;
