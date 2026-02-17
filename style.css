@@ -150,7 +150,7 @@ nav a:hover::after {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s;
   cursor: pointer;
-  color: #111;
+  color: #111 !important;
   font-weight: 500;
   font-size: 1.1em;
   display: flex;
@@ -158,6 +158,7 @@ nav a:hover::after {
   align-items: center;
   justify-content: center;
   min-height: 60px;
+  background: white !important;
 }
 
 .card:hover {
@@ -188,6 +189,7 @@ button {
 
 button:hover {
   background: darkred;
+  color: #fff !important;
 }
 
 /* CONTACT LAYOUT */
