@@ -82,13 +82,13 @@
 
   <!-- CONTACT -->
   <section id="contact" class="banner contact-bg contact-banner">
-    <div class="banner-text contact-banner-text">
+    <div class="banner-text contact-banner-text" onclick="scrollToContactForm()" style="cursor:pointer;">
       <h2>Contact Us</h2>
       <p>We are here to help you</p>
     </div>
   </section>
 
-  <section class="section gray contact-content">
+  <section id="contact-form-section" class="section gray contact-content">
     <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f" class="contact-image">
 
     <form onsubmit="sendMessage(event)">
@@ -107,6 +107,12 @@
   <script>
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function scrollToContactForm() {
+      const formSection = document.getElementById('contact-form-section');
+      if (formSection) {
+        formSection.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   </script>
 </body>
