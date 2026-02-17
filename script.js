@@ -9,7 +9,6 @@ function showMembership(plan) {
   if (membershipDiv) {
     membershipDiv.innerHTML = details[plan] || '';
     membershipDiv.style.display = 'block';
-    membershipDiv.scrollIntoView({behavior: 'smooth'});
   }
 }
 
@@ -29,7 +28,6 @@ function showTrainer(trainer) {
   if (trainerDiv) {
     trainerDiv.innerHTML = info[trainer] || '';
     trainerDiv.style.display = 'block';
-    trainerDiv.scrollIntoView({behavior: 'smooth'});
   }
 }
 
@@ -48,7 +46,6 @@ function showModule(module) {
   if (moduleDiv) {
     moduleDiv.innerHTML = content[module] || '';
     moduleDiv.style.display = 'block';
-    moduleDiv.scrollIntoView({behavior: 'smooth'});
   }
 }
 
